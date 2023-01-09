@@ -18,7 +18,7 @@
 </head>
 <body class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">ESTE ES UN CAMIO EN MI RAMA
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">
         <div class="container-fluid">
             <a href="" class="navbar-brand animate__animated animate__backInLeft animate__slower">CACHUREANDO LOGO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,21 +47,25 @@
     </nav>
     <hr class="border border-dark border-2 opacity-50">
 
-    <main>
-        <form action="" class="form__contacto">
-            <label for="nombre">Nombre de Usuario:</label>
-            <input type="text" id="nombre">
+    <main class="container">
+        <h2 class="title text-center">Contacto</h2>
 
-            <label for="email">Correo:</label>
-            <input type="email" name="" id="email">
+        <a class="btn btn-success w-100 mx-auto my-5" target="_blank" href="https://api.whatsapp.com/send/?phone=%2B56956583254"><i class="fa-brands fa-whatsapp"></i> Contactar por Whatsapp</a>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea class="" name="mensaje" id="mensaje" cols="50" rows="10" style="resize: none;"></textarea>
+
+        <form action="" class="">
+            <label for="nombre" class="form-label">Nombre de Usuario:</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Escriba su Nombre">
+
+            <label for="email" class="form-label">Correo:</label>
+            <input type="email" name="" id="email" class="form-control" placeholder="Escriba su correo electrónico">
+
+            <label for="mensaje" class="form-label">Mensaje:</label>
+            <textarea class="form-control" name="mensaje" id="mensaje" cols="50" rows="10" style="resize: none;" placeholder="Escriba su mensaje"></textarea>
             
-            <input type="submit" value="Enviar" class="btn btn-form-contact">
+            <input type="submit" value="Enviar" class="btn btn-primary w-25">
         </form>
 
-        <a class="btn whatsapp" target="_blank" href="https://api.whatsapp.com/send/?phone=%2B56956583254"><i class="fa-brands fa-whatsapp"></i>Contactar por Whatsapp</a>
     </main>
 
     <footer class="card mt-3">

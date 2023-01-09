@@ -48,34 +48,31 @@
     <hr class="border border-dark border-2 opacity-50">
 
 
-    <main>
-        <img class="main__image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZIBmOmlsx4853HzeVYYRd1xnlhpLA_3QcZw&usqp=CAU" alt="" width="415px" height="206px">
+    <main >
+        <img class="img_fluid rounded m-auto d-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZIBmOmlsx4853HzeVYYRd1xnlhpLA_3QcZw&usqp=CAU" alt="" width="415px" height="206px">
         
-        <section>
-            <h2 class="section__title">Ingreso de Pedidos</h2>
+        <section class="container">
+            <h2 class="title text-center">Ingreso de Pedidos</h2>
 
             <form action="" class="form__pedidos">
-                <label for="cliente">Cliente:
-                </label>
-                <input type="text" name="" id="cliente" placeholder="Nombre de cliente" required>
+                <label for="cliente" class="form-label">Cliente:</label>
+                <input type="text" name="" id="cliente" placeholder="Nombre de cliente" class="form-control" required>
 
-                <label for="fecha">Fecha Compra:
-                </label>
-                <input type="date" name="" id="fecha" required>
+                <label for="fecha" class="form-label">Fecha Compra:</label>
+                <input type="date" name="" id="fecha" class="form-control" required>
                 
-                <label for="telefono">Teléfono:
-                </label>
-                <input type="tel" name="" id="telefono" placeholder="Teléfono de contacto">
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input type="tel" name="" id="telefono" placeholder="Teléfono de contacto" class="form-control">
 
-                <label for="productos">Productos:
-                </label>
-                <textarea name="" id="productos" cols="30" rows="10" style="resize: none;"></textarea>
+                <label for="productos" class="form-label">Productos:</label>
+                <textarea name="" id="productos" cols="30" rows="10" style="resize: none;" class="form-control" placeholder="Productos"></textarea>
 
-                <label for="pagado">Pagado
-                </label>
-                <input type="checkbox" name="" id="pagado">
+                <div class="form-check">
+                    <input type="checkbox" name="" id="pagado" class="form-check-input">
+                    <label for="pagado" class="form-check-label">Pagado:</label>
+                </div>
 
-                <input type="submit" value="Guardar" class="btn btn-form-pedidos">
+                <input type="submit" value="Guardar" class="btn btn-success w-25">
                 
             </form>
 
