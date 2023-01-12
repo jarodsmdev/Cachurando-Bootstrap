@@ -61,3 +61,38 @@ function showrango() {
   // Mostrar el mensaje de calificación
   document.getElementById("result").innerHTML = message;
 }
+
+// Inclusion de funciones con Jquery basicas
+$("#mostrar1").click(function() {
+  $("#img1").hide(1500);
+  $("#mostrar1").html('Gracias por su compra');
+  $("#mostrar1").css({'border':'4px solid #b7e5ff','color':'#cc3333','font-weight':'bold','background-color':'#ffffff'});
+  });
+
+  $("#mostrar2").click(function() {
+    $("#img2").hide(1500);
+    $("#mostrar2").html('Gracias por su compra');
+    $("#mostrar2").css({'border':'4px solid #b7e5ff','color':'#cc3333','font-weight':'bold','background-color':'#ffffff'});
+  });
+
+  $("#mostrar3").click(function() {
+    $("#img3").hide(1500);
+    $("#mostrar3").html('Gracias por su compra');
+    $("#mostrar3").css({'border':'4px solid #b7e5ff','color':'#cc3333','font-weight':'bold','background-color':'#ffffff'});
+  });
+
+  $("#mostrar4").click(function() {
+    $("#img4").hide(1500);
+    $("#mostrar4").html('Gracias por su compra');
+    $("#mostrar4").css({'border':'4px solid #b7e5ff','color':'#cc3333','font-weight':'bold','background-color':'#ffffff'});
+  });
+
+  $(document).ready(function(){
+    $("#productos").hover(function(){
+      $(oferta).append("<p>!!!OFERTA......!!!OFERTA....!!OFERTA.....!!COMPRE YA.....!!ULTIMOS PRODUCTOS..</p>");
+      $(oferta).css({'color':'red'});
+      $(oferta).animate({left: '250px'});
+    });
+  });
+  
+ 
