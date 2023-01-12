@@ -1,5 +1,14 @@
+// FUNCIONALIADES DISPONIBLES PARA TODOS LOS DOCUMENTOS HTML
+
+
 // SELECCION DEL ELEMENTO FECHA DEL HTML
 let fecha = document.getElementById('fecha_hora');
+
+// AL CARGAR EL DOCUMENTO COMPLETO SE EJECUTARÁ LA FUNCIÓN
+document.addEventListener("DOMContentLoaded", function(){
+    // PINTA LA FECHA EN PANTALLA USA COMO ARGUMENTO EL ELEMENTO QUE LA RENDERIZARÁ EN EL HTML
+    insertarFecha(fecha);
+})
 
 
 // OBTIENE LA FECHA DEL SISTEMA LA DESGLOSA Y LA FORMATEA
@@ -7,7 +16,7 @@ function insertarFecha(elemento_fecha){
     let fecha_hora = new Date();
 
     let day = doble_digito(fecha_hora.getDate());
-    let month = doble_digito(fecha_hora.getMonth() + 1);
+    let month = doble_digito(fecha_hora.getMonth() + 1); //ENE = 0; FEB = 1...DIC = 11
     let year = doble_digito(fecha_hora.getFullYear());
     let hour = doble_digito(fecha_hora.getHours());
     let minute = doble_digito(fecha_hora.getMinutes());
@@ -36,10 +45,3 @@ function doble_digito(dato){
     }
     return dato
 }
-
-
-// AL CARGAR EL DOCUMENTO COMPLETO SE EJECUTARÁ LA FUNCIÓN
-document.addEventListener("DOMContentLoaded", function(){
-    // PINTA LA FECHA EN PANTALLA USA COMO ARGUMENTO EL ELEMENTO QUE LA RENDERIZARÁ EN EL HTML
-    insertarFecha(fecha);
-})
