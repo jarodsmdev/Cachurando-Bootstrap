@@ -1,3 +1,5 @@
+// FUNCIONALIDADES DISPONIBLES SÓLO DISPONIBLES PARA CONTACTO.HTML
+
 // SELECCION DEL ELEMENTO HTML MENSAJE
 let mensaje = document.getElementById('mensaje_nota')
 // SELECCION DEL ELEMENTO NOTA ENCUESTA
@@ -63,4 +65,26 @@ nota_encuesta.addEventListener("change", function(event){
     mensaje.classList.add(color) // PINTA EL MENSAJE DEL COLOR DEPENDIENTE DE LA NOTA Y EL MENSAJE OBTENIDO
     mensaje.classList.remove('d-none'); // MUESTRA EL MENSAJE QUITANDO LA CLASE 'd-none' DE BOOTSTRAP
     color_tmp = color // GUARDA EN LA VARIABLE LA CLASE DEL COLOR, PARA POSTERIORMENTE LOGRAR IDENTIFICARLA Y QUITARLA
+})
+
+// COMPORTAMIENTO DEL BOTON DE ENVÍO DE LA CALIFICACION
+$("#send_form").click(function(){
+    Swal.fire({
+    title: '¿Necesitas más tiempo para pensarlo?',
+    text: "Deberías tomarte más tiempo para evaluar nuestra página",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#157347',
+    cancelButtonColor: '#d33',
+    confirmButtonText: '¡Lo enviaré de igual forma!'
+    }).then((result) => {
+    if (result.isConfirmed) {
+        Swal.fire(
+        '¡Gracias!',
+        'Tú calificación ha sido enviada.',
+        // 'success'
+        )
+    }
+    })
+
 })

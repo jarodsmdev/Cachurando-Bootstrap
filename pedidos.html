@@ -11,6 +11,9 @@
     <!-- ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+    <!-- DATATABLEJS CSS v1.13.1-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+
     <!-- BOOTSTRAP CSS 5.3alpha1 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 
@@ -46,7 +49,7 @@
 
     </nav>
     <hr class="border border-dark border-2 opacity-50">
-
+    
     <p id="fecha_hora" class="d-flex justify-content-end"></p>
 
     <main >
@@ -56,28 +59,75 @@
             <h2 class="title text-center">Ingreso de Pedidos</h2>
 
             <form action="" class="form__pedidos">
-                <label for="cliente" class="form-label">Cliente:</label>
-                <input type="text" name="" id="cliente" placeholder="Nombre de cliente" class="form-control" required>
+                <p>
+                    <label for="cliente" class="form-label">Cliente:</label>
+                    <input type="text" name="" id="cliente" placeholder="Nombre de cliente" class="form-control" required>
+                </p>
 
                 <label for="fecha" class="form-label">Fecha Compra:</label>
-                <input type="date" name="" id="fecha" class="form-control" required>
+                <input type="date" name="" id="fecha" class="form-control">
                 
                 <label for="telefono" class="form-label">Teléfono:</label>
-                <input type="tel" name="" id="telefono" placeholder="Teléfono de contacto" class="form-control">
+                <input type="tel" name="" id="telefono" placeholder="Teléfono de contacto" class="form-control" required>
 
                 <label for="productos" class="form-label">Productos:</label>
                 <textarea name="" id="productos" cols="30" rows="10" style="resize: none;" class="form-control" placeholder="Productos"></textarea>
 
                 <div class="form-check">
-                    <input type="checkbox" name="" id="pagado" class="form-check-input">
+                    <input type="checkbox" name="chk_pagado" id="pagado" class="form-check-input">
                     <label for="pagado" class="form-check-label">Pagado:</label>
                 </div>
 
-                <input type="submit" value="Guardar" class="btn btn-success w-25">
+                <input type="submit" id="send_form" value="Guardar" class="btn btn-success w-50 m-auto d-block">
                 
             </form>
+        </section>
 
-            
+        <section class="m-3">
+            <table id="table" class="table table-striped table-sm fs-6 text-center">
+                <thead class="bg-dark text-white text-center">
+                    <tr>
+                        <th><i class="fa-solid fa-users"></i></th>
+                        <th><i class="fa-regular fa-calendar-days"></i></th>
+                        <th><i class="fa-solid fa-phone"></i></th>
+                        <th><i class="fa-solid fa-signal"></i></th>
+                        <th><i class="fa-solid fa-list-check"></i></th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cristián Rodríguez</td>
+                        <td>03.ene.2023</td>
+                        <td>+56 9 5241 3254</td>
+                        <td>
+                            <i class="fa-solid fa-sack-dollar text-success"></i>
+                            <i class="fa-solid fa-truck-ramp-box text-secondary"></i>
+                            <i class="fa-solid fa-truck-fast text-primary"></i>
+                            <i class="fa-regular fa-circle-check text-success"></i>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-warning btn-sm"><i class="fa-solid fa-file-pen"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Daniel Osorio</td>
+                        <td>29.ene.2023</td>
+                        <td>+56 9 2648 2698</td>
+                        <td>
+                            <i class="fa-solid fa-sack-dollar text-success"></i>
+                            <i class="fa-solid fa-truck-ramp-box text-secondary"></i>
+                            <i class="fa-solid fa-truck-fast text-primary"></i>
+                            
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-warning btn-sm"><i class="fa-solid fa-file-pen"></i></a>
+                            <a href="" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+            </table>
         </section>
 
     </main>
@@ -104,7 +154,20 @@
 
     <!-- BOOTSTRAP JS 5.3alpha1 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- JQUERY 3.1.1-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    
+    <!-- DATATABLE JS v1.13.1-->
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+
+    <!-- SWEET ALERT 2.11 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
+    <!-- CUSTOM JS -->
     <script src="./js/app.js"></script>
+    <script src="./js/pedidos.js"></script>
 
 </body>
 </html>
