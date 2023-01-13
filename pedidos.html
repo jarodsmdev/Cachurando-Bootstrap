@@ -52,11 +52,11 @@
     
     <p id="fecha_hora" class="d-flex justify-content-end"></p>
 
-    <main >
-        <img class="img-fluid m-auto d-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZIBmOmlsx4853HzeVYYRd1xnlhpLA_3QcZw&usqp=CAU" alt="" width="415px" height="206px">
+    <main class="text-primary">
+        <img class="img-fluid m-auto d-block rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZIBmOmlsx4853HzeVYYRd1xnlhpLA_3QcZw&usqp=CAU" alt="" width="415px" height="206px">
         
         <section class="container">
-            <h2 class="title text-center">Ingreso de Pedidos</h2>
+            <h2 class="title text-center mt-3">Ingreso de Pedidos</h2>
 
             <form action="" class="form__pedidos">
                 <p>
@@ -65,20 +65,20 @@
                 </p>
 
                 <label for="fecha" class="form-label">Fecha Compra:</label>
-                <input type="date" name="" id="fecha" class="form-control">
+                <input type="date" name="" id="fecha" class="form-control" required>
                 
                 <label for="telefono" class="form-label">Teléfono:</label>
                 <input type="tel" name="" id="telefono" placeholder="Teléfono de contacto" class="form-control" required>
 
                 <label for="productos" class="form-label">Productos:</label>
-                <textarea name="" id="productos" cols="30" rows="10" style="resize: none;" class="form-control" placeholder="Productos"></textarea>
+                <textarea name="" id="productos" cols="30" rows="10" style="resize: none;" class="form-control mb-3" placeholder="Productos"></textarea>
 
-                <div class="form-check">
+                <div class="form-check mb-3">
                     <input type="checkbox" name="chk_pagado" id="pagado" class="form-check-input">
                     <label for="pagado" class="form-check-label">Pagado:</label>
                 </div>
 
-                <input type="submit" id="send_form" value="Guardar" class="btn btn-success w-50 m-auto d-block">
+                <input type="submit" id="send_form" value="Guardar" class="btn btn-primary w-50 m-auto d-block">
                 
             </form>
         </section>
