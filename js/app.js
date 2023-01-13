@@ -20,12 +20,12 @@ function insertarFecha(elemento_fecha){
     let year = doble_digito(fecha_hora.getFullYear());
     let hour = doble_digito(fecha_hora.getHours());
     let minute = doble_digito(fecha_hora.getMinutes());
-    // let seconds = doble_digito(fecha_hora.getSeconds());
+    let seconds = doble_digito(fecha_hora.getSeconds());
 
 
     // FORMATEA LA FECHA Y HORA
-    // let fecha_completa = `Fecha / Hora: ${day}/${month}/${year} ${hour}:${minute}:${seconds}`
-    let fecha_completa = `Fecha / Hora: ${day}/${month}/${year} ${hour}:${minute}`
+    let fecha_completa = `Fecha / Hora: ${day}/${month}/${year} ${hour}:${minute}:${seconds}`
+    // let fecha_completa = `Fecha: ${day}/${month}/${year} Hora: ${hour}:${minute}`
     elemento_fecha.innerText = fecha_completa
 
     // FUNCIÓN QUE SE AUTOEJECUTA CADA 1000 MILISEGUNDOS (1 SEG)
