@@ -16,23 +16,26 @@
   
 </head>
 <body class="container-fluid">
-    
+ <!--JAVA SCRIPT QUE HACE EL LLAMADO A LA FECHA Y A LA HORA-->
+  <p id="time" style="text-align: right;">Fecha</p>
 
-<p id="time" style="text-align: right;">Fecha</p>
+  <!-- MENU-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">
         <div class="container-fluid">
-            <a href="" class="navbar-brand animate__animated animate__backInLeft animate__slower">CHACHUREANDO LOGO</a>
+            <a href="" class="navbar-brand">
+              <img src="./img/Logo.png" alt="">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>          
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse  justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-rigth mb-2 mb-lg-0 fs-5">
                     <li class="nav-item">
                         <a href="./index.html" class="nav-link" aria-current="page"><i class="fa-solid fa-play"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pedidos.html"><i class="fa-solid fa-shop-lock"></i> Pedidos</a>
+                        <a class="nav-link " href="./pedidos.html"><i class="fa-solid fa-shop-lock"></i> Pedidos</a>
                     </li>
                     <li class="nav-item">
                         <a href="./clientes.html" class="nav-link"><i class="fa-solid fa-people-robbery"></i> Clientes</a>
@@ -51,21 +54,21 @@
 
     <main>
         
-         
-        <section class="">
-          <div class="container text-center">
+         <!----SECCION DE CONTENIDO DEL INDEX-->
+        
+          <section class="container text-center" style="margin-top: 50px;">
                 <div class="row">
                  
-                  <div class="col-sm-12 col-lg-8">
+                  <div class="col-sm-12 col-lg-7">
                     <img src="https://i.ibb.co/0XC7DRc/tr.jpg" alt="logo" width="100%" class="img-fluid rounded">
                   </div> 
-                  <div class="col-sm-12 col-lg-4" >
+                  <div class="col-sm-12 col-lg-5" >
                     <h1 class="text-primary fw-bold my-5">¿Quienes somos?</h1>
                     <p class="text-primary fs-5 text-start">La empresa <b>“Cachureando”</b> es un emprendimiento de un grupo de jóvenes, quienes necesitan vender sus productos en especial productos del hogar ofrecemos una gran variedad de productos que lo puede consultar, directamente <a href="#productos">aqui</a> anexo a  ello, ofrecemos servicios de delivery puerta a puerta.
                     </p>
                   </div> 
                 </div>  
-                <div class="row">
+                <div class="row" style="margin-top: 50px;">
                   <div class="col-sm-12 col-md-4">
                     <br>
                     <h2 class="text-start text-primary fw-bold">Ubicación:</h2>
@@ -75,25 +78,23 @@
                   </div>
                   <div class="col-sm-12 col-md-8 mt-4">
                     
-                    <img  src="https://i.ibb.co/LY08qKq/Ubicacion.png" alt="ubicacion" class="img-fluid rounded">
+                    <img  src="https://i.ibb.co/LY08qKq/Ubicacion.png" alt="ubicacion" class="img-fluid rounded" width="60%" height="60%">
                   </div>
                  
                 </div>
-              </div>    
+            </section>    
  
-           
- 
-        </section>
- 
-   
-       
- 
-    <section>
 
+       <!-----SECCION DE IMAGENES--> 
+      
         
-        <div class="container text-center">
-            <h2 id="productos" class="text-primary fw-bold my-5">Galería de Imágenes</h2>
-            <h2 id="oferta"class="text-danger fw-bold my-5"></h2>
+        <section class="container text-center">
+          
+          
+          <h2 id="productos" class="text-primary fw-bold my-5">Galería de Imágenes</h2>
+          <div id="blink"><b>Ofertas de Ultima Hora..!!!!</b></div>
+          <h2 id="oferta"class="text-danger fw-bold my-5"></h2>
+
             <div class="row">
                 <div class="col">
                     <div class="card overflow-hidden d-block mb-3">
@@ -101,6 +102,7 @@
                       <p>$36.750 CLP</p>
                       <p>Marca: Electrolux</p>
                       <p><b>Hervidor</b></p>
+                      
                       <button type="button" id="mostrar1" class="btn btn-primary w-50 m-auto mb-3"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
                     </div>
                 </div>
@@ -136,22 +138,38 @@
                 </div>
               </div>
             </div>
-        <!---
-              <div class="tamaño">producto 5</div>
-              <div class="tamaño">producto 6</div>
-              <div class="tamaño">producto 7</div>
-              <div class="tamaño">producto 8</div>
-        -->
-        </div>  
-   
+          <div class="row">
+            <div class="col">
+              <div class="card overflow-hidden d-block mb-3">
+                <img id="img5" class="img_fluid" src="./img/bicicleta.png" alt="bicicleta" style="width: 200px; height:180px"/>
+                <p>$164.750 CLP</p>
+                <p>Marca: Explorer</p>
+                <p><b>Bicicleta</b></p>
+                <button type="button" id="mostrar5" class="btn btn-primary  w-50 m-auto mb-3"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+              </div>
+            </div>
+          
+        
+          <div class="col">
+            <div class="card overflow-hidden d-block mb-3">
+              <img id="img6" class="img_fluid" src="./img/compu.png" alt="computadora" style="width: 200px; height:180px"/>
+              <p>$369.750 CLP</p>
+              <p>Hp NootBook 14</p>
+              <p><b>Computador</b></p>
+              <button type="button" id="mostrar6" class="btn btn-primary  w-50 m-auto mb-3"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+            </div>
+          </div>
+        
+      </div>
     </section>
    
+    
  
     </main>
 
 
     <footer class="card mt-3">
-        <h5 class="card-header bg-dark text-white animate__animated animate__infinite animate__slow animate__flipInX">TEAM <span>FOUR</span> &copy; 2023 All rights reserved.</h5>
+        <h5 class="card-header bg-primary text-white animate__animated animate__infinite animate__slow animate__flipInX">TEAM <span>FOUR</span> &copy; 2023 All rights reserved.</h5>
         <div class="card-body">
             <p class="card-text">
                 <a class="card-text" href="https://api.whatsapp.com/send/?phone=%2B56956583254" target="_blank">
@@ -174,6 +192,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
    
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    
+    <!--JavaScript que llama a la funcion hora Fecha-->
     <script type="text/javascript" src="./js/funciones.js"></script>
   
   </body>

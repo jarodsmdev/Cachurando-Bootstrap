@@ -87,12 +87,38 @@ $("#mostrar1").click(function() {
     $("#mostrar4").css({'border':'4px solid #b7e5ff','color':'#cc3333','font-weight':'bold','background-color':'#ffffff'});
   });
 
+  $("#mostrar5").click(function() {
+    $("#img5").hide(1500);
+    $("#mostrar5").html('Gracias por su compra');
+    $("#mostrar5").css({'border':'4px solid #b7e5ff','color':'#cc3333','font-weight':'bold','background-color':'#ffffff'});
+  });
+
+  $("#mostrar6").click(function() {
+    $("#img6").hide(1500);
+    $("#mostrar6").html('Gracias por su compra');
+    $("#mostrar6").css({'border':'4px solid #b7e5ff','color':'#cc3333','font-weight':'bold','background-color':'#ffffff'});
+  });
+
   $(document).ready(function(){
     $("#productos").hover(function(){
-      $(oferta).append("<p>!!!OFERTA......!!!OFERTA....!!OFERTA.....!!COMPRE YA.....!!ULTIMOS PRODUCTOS..</p>");
+      $(oferta).append("<p>!!!OFERTA....!!!OFERTA....!!OFERTA...!!COMPRE YA....!!ULTIMOS PRODUCTOS..</p>");
       $(oferta).css({'color':'red'});
       $(oferta).animate({left: '250px'});
     });
   });
+
+
+  //Texto parpadeando en Java Script
+
+window.setInterval (BlinkIt, 500);
+    var color = "red";
+    function BlinkIt () {
+    var blink = document.getElementById ("blink");
+    color = (color == "blue")? "red" : "blue";
+    blink.style.color = color;
+    blink.style.fontSize='36px';
+ 
+    }
+
   
  
