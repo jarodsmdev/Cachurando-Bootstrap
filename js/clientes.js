@@ -1,6 +1,9 @@
 
 
 $(document).ready(function(){
+
+    $('#table').DataTable();
+
     function validarCampo(){
         let mensaje = "El campo no debe estar vacío"
         // DECLARACION DE VARIABLES Y CAPTURA DE DATOS HTML
@@ -12,22 +15,18 @@ $(document).ready(function(){
         // VALIDACION CLIENTE
         if (cliente == ""){
             $('#mensaje-cliente').text(mensaje)
-        
         }
         
         if (telefono == ""){
             $('#mensaje-telefono').text(mensaje)
-            
         }
     
         if (direccion == ""){
-            $('#mensaje-direccion').text(mensaje)
-            
+            $('#mensaje-direccion').text(mensaje) 
         }
     
         if (pais == ""){
-            $('#mensaje-pais').text(mensaje)
-            
+            $('#mensaje-pais').text(mensaje)  
         }
 
         if (cliente == "" && 
@@ -49,9 +48,7 @@ $(document).ready(function(){
     // AGREGAR EVENTO CLICK AL BOTON AGREGAR
     $('#btn-agregar').click(function(){
         // INVOCACION DE LA FUNCION
-        
         validarCampo()
-       
     })       
 })
 
