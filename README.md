@@ -10,3 +10,5 @@ José Zamora                 |    zamorajg
 John Banner                 |    john3410000
 
 Link del repositorio GitHub del proyecto: https://github.com/jarodsmdev/Cachureando-Bootstrap.git
+
+Preview del sitio: https://jarodsmdev.github.io/Cachureando-Bootstrap/
